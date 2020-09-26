@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}"> -->
+</head>
+<body>
+
+    <!-- <input placeholder="enter todo" type="text"><button>Submit</button> -->
+    <form method="POST" action="{{ url_for('add') }}">
+        <input type="text" name="title" placeholder="enter todo">
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
